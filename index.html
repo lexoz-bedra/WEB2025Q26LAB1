@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moonlight</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Moonlight</h1>
+    <h1 class="header__slogan">Скоро открытие!</h1>
+    <button type="button" class="header__cart-button" aria-label="Открыть корзину">
+      Корзина <span class="header__cart-count">0</span>
+    </button>
+  </header>
+
+  <main class="main">
+    <section class="catalog" aria-labelledby="catalog-title">
+      <h2 id="catalog-title" class="catalog__title">Коллекция украшений</h2>
+      <div class="catalog__grid">
+        <article class="product-card" data-id="1" data-name="Подвеска с бриллиантом" data-price="45000">
+          <h3 class="product-card__name">Подвеска с бриллиантом</h3>
+          <p class="product-card__price">45 000 ₽</p>
+          <button type="button" class="product-card__add-btn">Добавить в корзину</button>
+        </article>
+        <article class="product-card" data-id="2" data-name="Золотое кольцо с сапфиром" data-price="28500">
+          <h3 class="product-card__name">Золотое кольцо с сапфиром</h3>
+          <p class="product-card__price">28 500 ₽</p>
+          <button type="button" class="product-card__add-btn">Добавить в корзину</button>
+        </article>
+        <article class="product-card" data-id="3" data-name="Серьги с изумрудами" data-price="62000">
+          <h3 class="product-card__name">Серьги с изумрудами</h3>
+          <p class="product-card__price">62 000 ₽</p>
+          <button type="button" class="product-card__add-btn">Добавить в корзину</button>
+        </article>
+        <article class="product-card" data-id="4" data-name="Браслет из серебра 925" data-price="8900">
+          <h3 class="product-card__name">Браслет из серебра 925</h3>
+          <p class="product-card__price">8 900 ₽</p>
+          <button type="button" class="product-card__add-btn">Добавить в корзину</button>
+        </article>
+      </div>
+    </section>
+
+    <aside class="cart" aria-labelledby="cart-title">
+      <h2 id="cart-title" class="cart__title">Корзина</h2>
+      <div class="cart__items">
+        <p class="cart__empty">Корзина пуста</p>
+      </div>
+      <p class="cart__total">Итого: <span class="cart__total-sum">0</span> ₽</p>
+      <button type="button" class="cart__checkout-btn">Оформить заказ</button>
+    </aside>
+  </main>
+
+  <section class="order-form-section" id="order-form-section" aria-labelledby="order-form-title">
+    <h2 id="order-form-title" class="visually-hidden">Оформление заказа</h2>
+    <form class="order-form" id="order-form" action="#" method="post" onsubmit="return false">
+      <label class="order-form__label" for="first-name">Имя</label>
+      <input class="order-form__input" type="text" id="first-name" name="firstName" required>
+
+      <label class="order-form__label" for="last-name">Фамилия</label>
+      <input class="order-form__input" type="text" id="last-name" name="lastName" required>
+
+      <label class="order-form__label" for="address">Адрес доставки</label>
+      <input class="order-form__input" type="text" id="address" name="address" required>
+
+      <label class="order-form__label" for="phone">Контактный номер телефона</label>
+      <input class="order-form__input" type="tel" id="phone" name="phone" required>
+
+      <button type="submit" class="order-form__submit">Создать заказ</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__text">© 2026 Moonlight</p>
+  </footer>
+</body>
+</html>
