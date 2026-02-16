@@ -52,9 +52,9 @@
     </aside>
   </main>
 
-  <section class="order-form-section" id="order-form-section" aria-labelledby="order-form-title">
+  <section class="order-form-section order-form-modal" id="order-form-section" aria-labelledby="order-form-title" aria-hidden="true" hidden>
     <h2 id="order-form-title" class="visually-hidden">Оформление заказа</h2>
-    <form class="order-form" id="order-form" action="#" method="post" onsubmit="return false">
+    <form class="order-form" id="order-form" action="#" method="post">
       <label class="order-form__label" for="first-name">Имя</label>
       <input class="order-form__input" type="text" id="first-name" name="firstName" required>
 
@@ -74,5 +74,7 @@
   <footer class="footer">
     <p class="footer__text">© 2026 Moonlight</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
